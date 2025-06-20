@@ -8,6 +8,11 @@
 .section2__content {
    display: flex;
    justify-content: space-between;
+   margin-bottom: 30px;
+}
+
+.section2__content:last-child {
+   margin-bottom: 0;
 }
 
 .section2__content-img {
