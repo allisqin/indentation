@@ -1,0 +1,12 @@
+.section3__text {
+   margin-bottom: 30px;
+}
+
+.section3__img {
+   display: block;
+   margin-bottom: 30px;
+}
+
+.section3__img--center {
+   margin-inline: auto;
+}

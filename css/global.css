@@ -27,3 +27,17 @@ a {
    width: 1140px;
    margin-inline: auto;
 }
+
+section {
+   padding: 60px 15px;
+}
+
+p {
+   font-size: 20px;
+}
+
+.title {
+   font-weight: 900;
+   font-size: 36px;
+   margin-bottom: 30px;
+}

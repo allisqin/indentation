@@ -10,9 +10,7 @@
   <body>
     <div class="container">
       <section class="section1">
-        <h1 class="section1__title title">
-          Отступы в вёрстке: margin и padding
-        </h1>
+        <h1 class="section1__title">Отступы в вёрстке: margin и padding</h1>
         <p class="section1__text">
           В этой статье я рассмотрю самые популярные "стандартные" решения для
           сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь
@@ -37,7 +35,7 @@
               </a>
             </li>
             <li class="section1__contents-item">
-              <a href="" class="section1__contents-link">
+              <a href="#section3" class="section1__contents-link">
                 Отступ задается последнему возможному элементу в DOM-дереве
               </a>
             </li>
@@ -50,7 +48,7 @@
         </div>
       </section>
       <section class="section2" id="section2">
-        <h2 class="section2__title">
+        <h2 class="section2__title title">
           Отступ задается от предыдущего элемента к следующему: от первого ко
           второму, сверху вниз, слева направо.
         </h2>
@@ -87,7 +85,7 @@
           </div>
         </div>
         <div class="section2__content">
-          <div class="section2__descr">
+          <div class="section2__descr section2__descr--bottom">
             <p class="section2__content-text">
               Отступ внутри блока сверху или слева реализуется через
               <i>padding-top</i> и <i>padding-left</i> родителя.
@@ -107,6 +105,57 @@
             class="section2__content-img"
           />
         </div>
+      </section>
+      <section class="section3" id="section3">
+        <h2 class="title">
+          Отступ задается последнему возможному элементу в DOM-дереве
+        </h2>
+        <p class="section3__text">
+          Вообще, <i>margin</i> задают исключительно между соседними элементами
+          DOM-дерева. Для примера, посмотрите на этот список:
+        </p>
+        <img src="img/image3.png" alt="Пример кода" class="section3__img" />
+        <img
+          src="img/image4.png"
+          alt="Пример"
+          class="section3__img section3__img--center"
+        />
+        <p class="section3__text">
+          Отступ делают за счёт соседних элементов, а не дочерних:
+        </p>
+        <img src="img/image5.png" alt="Пример с кодом" class="section3__img" />
+        <p class="section3__text">
+          Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке
+          &lt;article&gt; для достижения той же цели. Внешне останется все точно
+          также, но так делать не рекомендуется.
+        </p>
+        <p class="section3__text">
+          Предыдущий пример был достаточно простым, но бывает вложенность
+          значительно больше.
+        </p>
+        <img
+          src="img/image6.png"
+          alt="Пример кода"
+          class="section3__img section3__img--center"
+        />
+        <p class="section3__text">
+          В случае с заголовком, если ему необходим отступ сверху, последним
+          элементом будет <i>section</i>. Именно для него задается
+          <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>.
+          Свойства <i>margin</i>, которые стоят по умолчанию необходимо
+          обнулить.
+        </p>
+        <img
+          src="img/image7.png"
+          alt="Пример с кодом"
+          class="section3__img section3__img--center"
+        />
+        <p class="section3__text">
+          Это необходимо для более простого поиска отступов в будущем — для вас
+          или того, кто будет верстать после вас. Кроме того, возможны серьёзные
+          проблемы при динамическом дублировании или выводе вёрстки с
+          нестандартной структурой отступов.
+        </p>
       </section>
     </div>
   </body>
