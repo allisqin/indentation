@@ -1,0 +1,23 @@
+.section5 {
+   background-color: #F1F1F1;
+   padding: 25px 45px;
+}
+
+.section5__title {
+   font-weight: 700;
+   font-size: 44px;
+   margin-bottom: 20px;
+}
+
+.section5__item {
+   display: block;
+   margin-bottom: 10px;
+}
+
+.section5__list {
+   margin-bottom: 30px;
+}
+
+.section5__item:last-child {
+   margin-bottom: 0;
+}
