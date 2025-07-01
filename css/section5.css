@@ -1,5 +1,10 @@
-.section5 {
+.container--section5 {
    background-color: #F1F1F1;
+   border-radius: 10px;
+}
+
+.section5__wrapper {
+   width: 100%;
    padding: 25px 45px;
 }
 

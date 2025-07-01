@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="container">
-      <section class="section1">
+    <section class="section section1">
+      <div class="container">
         <h1 class="section1__title">Отступы в вёрстке: margin и padding</h1>
         <p class="section1__text">
           В этой статье я рассмотрю самые популярные "стандартные" решения для
@@ -26,7 +26,9 @@
           верстальщиков. Итак, поговорим о фундаментальных основах работы с
           отступами в вёрстке.
         </p>
-        <div class="section1__contents">
+      </div>
+      <div class="section1__contents">
+        <div class="container container--contents">
           <h2 class="section1__contents-title">Содержание:</h2>
           <ol class="section1__contents-list">
             <li class="section1__contents-item">
@@ -46,8 +48,10 @@
             </li>
           </ol>
         </div>
-      </section>
-      <section class="section2" id="section2">
+      </div>
+    </section>
+    <section class="section section2" id="section2">
+      <div class="container">
         <h2 class="section2__title title">
           Отступ задается от предыдущего элемента к следующему: от первого ко
           второму, сверху вниз, слева направо.
@@ -105,8 +109,10 @@
             class="section2__content-img"
           />
         </div>
-      </section>
-      <section class="section3" id="section3">
+      </div>
+    </section>
+    <section class="section section3" id="section3">
+      <div class="container">
         <h2 class="title">
           Отступ задается последнему возможному элементу в DOM-дереве
         </h2>
@@ -156,8 +162,10 @@
           проблемы при динамическом дублировании или выводе вёрстки с
           нестандартной структурой отступов.
         </p>
-      </section>
-      <section class="section4">
+      </div>
+    </section>
+    <section class="section section4">
+      <div class="container">
         <h2 class="title">
           Для последнего элемента группы отступ всегда обнуляется
         </h2>
@@ -215,33 +223,37 @@
           alt="Пример кода"
           class="section4__img img-center"
         />
-      </section>
-      <section class="section5">
-        <h2 class="section5__title">Подытожим:</h2>
-        <ul class="section5__list">
-          <li class="section5__item">
-            — отступы задаём от предыдущего элемента к следующему
-          </li>
-          <li class="section5__item">
-            — используем только margin-right и margin-bottom
-          </li>
-          <li class="section5__item">
-            — внешние отступы задаются только между соседями
-          </li>
-          <li class="section5__item">
-            — внутренний отступ задаём самому верхнему элементу в дом дереве
-          </li>
-          <li class="section5__item">
-            — последнему элементу группы отступ всегда обнуляем
-          </li>
-        </ul>
-        <p class="section5__text">
-          Конечно бывают исключения. Ведь макеты бывают различной сложности.
-          Иногда базовые принципы приходится нарушать в угоду дизайнерского
-          решения или простоты вёрстки. Но для этого эти принципы необходимо
-          хорошо знать.
-        </p>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="section section5">
+      <div class="container container--section5">
+        <div class="section5__wrapper">
+          <h2 class="section5__title">Подытожим:</h2>
+          <ul class="section5__list">
+            <li class="section5__item">
+              — отступы задаём от предыдущего элемента к следующему
+            </li>
+            <li class="section5__item">
+              — используем только margin-right и margin-bottom
+            </li>
+            <li class="section5__item">
+              — внешние отступы задаются только между соседями
+            </li>
+            <li class="section5__item">
+              — внутренний отступ задаём самому верхнему элементу в дом дереве
+            </li>
+            <li class="section5__item">
+              — последнему элементу группы отступ всегда обнуляем
+            </li>
+          </ul>
+          <p class="section5__text">
+            Конечно бывают исключения. Ведь макеты бывают различной сложности.
+            Иногда базовые принципы приходится нарушать в угоду дизайнерского
+            решения или простоты вёрстки. Но для этого эти принципы необходимо
+            хорошо знать.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

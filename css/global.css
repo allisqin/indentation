@@ -19,7 +19,7 @@ h1, h2, ol, ul, p {
    padding: 0;
 }
 
-ol, ul {
+ul {
    list-style-type: none;
 }
 
@@ -31,11 +31,11 @@ a {
 .container {
    width: 1140px;
    margin-inline: auto;
-   padding: 60px 0 50px 0;
+   padding: 0 30px;
 }
 
-section {
-   padding: 60px 15px;
+.section {
+   padding: 30px 0;
 }
 
 p {
